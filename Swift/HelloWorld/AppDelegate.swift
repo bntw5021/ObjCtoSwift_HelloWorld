@@ -12,10 +12,22 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    MyViewController *myViewController;
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Set up the view controller
+        MyViewController *aViewController = [[MyViewController alloc] initWithNibName:@"HelloWorld" bundle:[NSBundle mainBundle]];
+        self.myViewController = aViewController;
+        [aViewController release];
+        
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque];
+        
+        // Add the view controller's view as a subview of the window
+        UIView *controllersView = [myViewController view];
+        [window addSubview:controllersView];
+        [window makeKeyAndVisible];
+        
         return true
     }
 
