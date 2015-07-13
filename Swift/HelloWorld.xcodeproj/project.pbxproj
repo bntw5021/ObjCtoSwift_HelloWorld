@@ -15,9 +15,7 @@
 		0313E2DE1B5155EE009790E2 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0313E2D41B5155EE009790E2 /* Icon@2x.png */; };
 		0313E2DF1B5155EE009790E2 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 0313E2D51B5155EE009790E2 /* iTunesArtwork */; };
 		0313E2E01B5155EE009790E2 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0313E2D61B5155EE009790E2 /* Background.png */; };
-		0313E2E11B5155EE009790E2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0313E2D71B5155EE009790E2 /* Default.png */; };
-		0313E2E21B5155EE009790E2 /* HelloWorld.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0313E2D81B5155EE009790E2 /* HelloWorld.xib */; };
-		0313E2E91B515699009790E2 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0313E2E81B515699009790E2 /* MyViewController.m */; };
+		0313E2EB1B53EE39009790E2 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0313E2EA1B53EE39009790E2 /* MyViewController.swift */; };
 		03E2CFA51B515222000DFFAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E2CFA41B515222000DFFAB /* AppDelegate.swift */; };
 		03E2CFAA1B515222000DFFAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E2CFA81B515222000DFFAB /* Main.storyboard */; };
 		03E2CFAC1B515222000DFFAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E2CFAB1B515222000DFFAB /* Images.xcassets */; };
@@ -44,11 +42,7 @@
 		0313E2D41B5155EE009790E2 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		0313E2D51B5155EE009790E2 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		0313E2D61B5155EE009790E2 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
-		0313E2D71B5155EE009790E2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		0313E2D81B5155EE009790E2 /* HelloWorld.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelloWorld.xib; sourceTree = "<group>"; };
-		0313E2E61B515698009790E2 /* HelloWorld-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Bridging-Header.h"; sourceTree = "<group>"; };
-		0313E2E71B515699009790E2 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
-		0313E2E81B515699009790E2 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		0313E2EA1B53EE39009790E2 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		03E2CF9F1B515222000DFFAB /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E2CFA31B515222000DFFAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03E2CFA41B515222000DFFAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,13 +94,11 @@
 			isa = PBXGroup;
 			children = (
 				03E2CFA41B515222000DFFAB /* AppDelegate.swift */,
-				0313E2E71B515699009790E2 /* MyViewController.h */,
-				0313E2E81B515699009790E2 /* MyViewController.m */,
+				0313E2EA1B53EE39009790E2 /* MyViewController.swift */,
 				03E2CFA81B515222000DFFAB /* Main.storyboard */,
 				03E2CFAB1B515222000DFFAB /* Images.xcassets */,
 				03E2CFAD1B515222000DFFAB /* LaunchScreen.xib */,
 				03E2CFA21B515222000DFFAB /* Supporting Files */,
-				0313E2E61B515698009790E2 /* HelloWorld-Bridging-Header.h */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -122,8 +114,6 @@
 				0313E2D41B5155EE009790E2 /* Icon@2x.png */,
 				0313E2D51B5155EE009790E2 /* iTunesArtwork */,
 				0313E2D61B5155EE009790E2 /* Background.png */,
-				0313E2D71B5155EE009790E2 /* Default.png */,
-				0313E2D81B5155EE009790E2 /* HelloWorld.xib */,
 				03E2CFA31B515222000DFFAB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -233,11 +223,9 @@
 				0313E2DF1B5155EE009790E2 /* iTunesArtwork in Resources */,
 				0313E2DB1B5155EE009790E2 /* Icon-Small.png in Resources */,
 				0313E2DA1B5155EE009790E2 /* Icon-Small-50.png in Resources */,
-				0313E2E11B5155EE009790E2 /* Default.png in Resources */,
 				0313E2DD1B5155EE009790E2 /* Icon.png in Resources */,
 				03E2CFAF1B515222000DFFAB /* LaunchScreen.xib in Resources */,
 				03E2CFAC1B515222000DFFAB /* Images.xcassets in Resources */,
-				0313E2E21B5155EE009790E2 /* HelloWorld.xib in Resources */,
 				0313E2DC1B5155EE009790E2 /* Icon-Small@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0313E2E91B515699009790E2 /* MyViewController.m in Sources */,
+				0313E2EB1B53EE39009790E2 /* MyViewController.swift in Sources */,
 				03E2CFA51B515222000DFFAB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,7 +376,7 @@
 				INFOPLIST_FILE = HelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorld/HelloWorld-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -401,7 +389,7 @@
 				INFOPLIST_FILE = HelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorld/HelloWorld-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
